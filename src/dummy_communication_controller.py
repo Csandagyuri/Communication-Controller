@@ -1,9 +1,8 @@
 
-#from src.communication_controller import CommunicationController
 from src.operation import Operation
 from src.position import Position
 
 
-class DummyCommunicationController():
+class DummyCommunicationController:
     def process(self, user_id: str, position: Position) -> list[Operation]:
-        return [Operation(op_code=1, target_type="socket", target_id= "ws://127.0.0.1:7890/Echo")]
+        return [Operation(op_code=1, target_type="nakama", target_id= "08e93940-280c-4ecd-a867-3f44dd7a344b.nakama1")]
